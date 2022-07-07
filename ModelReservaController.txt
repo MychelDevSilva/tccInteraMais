@@ -1,0 +1,95 @@
+@Entity
+public class ModelReservaController {
+
+	private @NotNull @Size(min = 1, max = 100) String NomeEquip;
+	private @NotNull @Size(min = 1, max = 100) String MarcaEquip;
+	private @NotNull @Size(min = 1, max = 100) String DescriEquip;
+	private @NotNull @Size(min = 1, max = 100) int QuantidadeEquip;
+	private @NotNull @Size(min = 1, max = 100) String StatusReserva;
+	private @NotNull @Size(min = 1, max = 100) String CodCampus;
+	private @NotNull @Size(min = 1, max = 100) String NomeCampus;
+	private @NotNull @Size(min = 1, max = 100) String TempoReserva;
+	private @NotNull @Size(min = 1, max = 100) String NomeCategoria;
+	
+	public String getNomeEquip() {
+		return NomeEquip;
+	}
+	
+	public void setNomeEquip(String NomeEquip) {
+		this.NomeEquip = NomeEquip;
+	}
+	
+	public String getMarcaEquip() {
+		return MarcaEquip;
+	}
+
+	public String getDescriEquip() {
+		return DescriEquip;
+	}
+
+	public void setDescriEquip(String descriEquip) {
+		DescriEquip = descriEquip;
+	}
+
+	public int getQuantidadeEquip() {
+		return QuantidadeEquip;
+	}
+
+	public void setQuantidadeEquip(int quantidadeEquip) {
+		QuantidadeEquip = quantidadeEquip;
+	}
+
+	public String getStatusReserva() {
+		return StatusReserva;
+	}
+
+	public void setStatusReserva(String statusReserva) {
+		StatusReserva = statusReserva;
+	}
+
+	public String getCodCampus() {
+		return CodCampus;
+	}
+
+	public void setCodCampus(String codCampus) {
+		CodCampus = codCampus;
+	}
+
+	public String getNomeCampus() {
+		return NomeCampus;
+	}
+
+	public void setNomeCampus(String nomeCampus) {
+		NomeCampus = nomeCampus;
+	}
+
+	public String getTempoReserva() {
+		return TempoReserva;
+	}
+
+	public void setTempoReserva(String tempoReserva) {
+		TempoReserva = tempoReserva;
+	}
+
+	public String getNomeCategoria() {
+		return NomeCategoria;
+	}
+
+	public void setNomeCategoria(String nomeCategoria) {
+		NomeCategoria = nomeCategoria;
+	}
+
+	public void setMarcaEquip(String marcaEquip) {
+		MarcaEquip = marcaEquip;
+	}
+	
+	
+}
+			return date;
+		}
+
+		public void setDate(Date date) {
+			this.date = date;
+		}
+	}
+}

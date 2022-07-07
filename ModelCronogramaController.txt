@@ -1,0 +1,51 @@
+@Entity
+	@Table(name = "tbl_Cronograma")
+	public class Cronograma {
+			
+		private @IdCronograma @GeneratedValue(strategy = GenerationType.IDENTITY) long IdCronograma;
+		private @NotNull @Size(min = 2, max = 100) String NomeEquip;
+		private @NotNull @Size(min = 2, max = 100) String NomeCampus;
+		private @NotNull @Size(min = 2, max = 100) String TempoReserva;
+		// private @ManyToOne @JsonIgnoreProperties("cronograma") Tema tema;
+		// private @ManyToOne @JsonIgnoreProperties("cronograma") Usuario usuario;
+
+		public long getIdCronograma() {
+			return IdCronograma;
+		}
+
+		public void setIdCronograma(long IdCronograma) {
+			this.IdCronograma = IdCronograma;
+		}
+
+		public String getNomeEquip() {
+			return NomeEquip;
+		}
+
+		public void setNomeEquip(String NomeEquip) {
+			this.NomeEquip = NomeEquip;
+		}
+
+		public String getNomeCampus() {
+			return NomeCampus;
+		}
+
+		public void setNomeCampus(String NomeCampus) {
+			this.NomeCampus = NomeCampus;
+		}
+
+		public String getTempoReserva() {
+			return TempoReserva;
+		}
+
+		public void setTema(String TempoReserva) {
+			this.TempoReserva = TempoReserva;
+		}
+	}
+}
+		}
+
+		public void setDate(Date date) {
+			this.date = date;
+		}
+	}
+}

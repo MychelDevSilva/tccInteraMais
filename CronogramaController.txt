@@ -1,0 +1,18 @@
+		@GetMapping("/{idCronograma}")
+		public ResponseEntity<List<Cronograma>> getByIdCronograma(@PathVariable Cronograma cronograma) {
+			return ResponseEntity.ok(cronogramaRepository.findAllByTagsContainingIgnoreCase(cronograma));
+		}
+		
+		@PostMapping("/{idCronograma}")
+		public ResponseEntity<List<Cronograma>> postByIdCronograma(@RequestBody Cronograma cronograma) {
+			return ResponseEntity.status(HttpStatus.CREATED).body(cronogramaRepository.save(cronograma));
+		}
+
+		@PutMapping("/{idCronograma}")
+		public ResponseEntity<List<Cronograma>> putByIdCronograma(@RequestBody Cronograma cronograma) {
+			return ResponseEntity.status(HttpStatus.CREATED).body(cronogramaRepository.save(cronograma));
+		}
+
+		@DeleteMapping("/{idCronograma}")
+		public void deleteByIdCronograma(@PathVariable long id) {
+			cronogramaRepository.deleteById(id);
